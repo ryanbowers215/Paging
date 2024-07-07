@@ -1,20 +1,20 @@
 "use client";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
-import FavoriteOutlinedIcon from "@mui/icons-material/FavoriteOutlined";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
 import StarOutlinedIcon from "@mui/icons-material/StarOutlined";
 import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
 import Image from "next/image";
 import { useState } from "react";
+import FavoriteOutlinedIcon from "@mui/icons-material/FavoriteOutlined";
 import Link from "next/link";
 
-const StatusUpdate = () => {
+const StartedPost = () => {
   const [isLiked, setIsLiked] = useState(false);
   return (
-    <div className="w-full h-fit md:h-70 border-2 border-slate-600 rounded-md flex flex-col items-center justify-between font-mono">
+    <div className="w-full rounded-md h-fit md:h-70 border-2 border-slate-600 flex flex-col items-center justify-between font-mono">
       {/* top */}
       <div className=" w-full h-fit p-1 border-b-2 border-slate-600">
-        <span>Ryan is on page 153 of 341 of Player Piano</span>
+        <span>Ryan started Player Piano!</span>
       </div>
       {/* middle */}
       <div className="w-full h-fit min-h-36 p-1 flex flex-row items-center my-2">
@@ -46,10 +46,10 @@ const StatusUpdate = () => {
         <div className="w-full bg-slate-200 rounded-sm h-2.5">
           <div
             className="bg-slate-600 h-2.5 rounded-sm"
-            style={{ width: "45%" }}
+            style={{ width: "0%" }}
           ></div>
         </div>
-        <div className="text-sm text-slate-400">45%</div>
+        <div className="text-sm text-slate-400">0%</div>
       </div>
 
       {/* bottom */}
@@ -72,4 +72,4 @@ const StatusUpdate = () => {
   );
 };
 
-export default StatusUpdate;
+export default StartedPost;

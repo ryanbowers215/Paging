@@ -8,7 +8,10 @@ const Navbar = () => {
     <div className="h-24 flex items-center justify-between">
       {/* left */}
       <div className="hidden md:block w-[20%]">
-        <Link href="/" className="text-xl text-slate-600 font-mono">
+        <Link
+          href="/"
+          className="text-xl text-slate-600 font-mono hover:text-slate-400"
+        >
           paging
         </Link>
       </div>
@@ -26,8 +29,8 @@ const Navbar = () => {
         <div className="block md:hidden">
           <MobileMenu />
         </div>
-        <div className="hidden md:block text-slate-600">
-          <Link href="/settings">
+        <div className="hidden md:block text-slate-600 hover:text-slate-400">
+          <Link href="/settings ">
             <SettingsOutlinedIcon />
           </Link>
         </div>

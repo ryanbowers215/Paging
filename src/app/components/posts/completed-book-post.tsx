@@ -6,6 +6,7 @@ import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
 import Image from "next/image";
 import { useState } from "react";
 import FavoriteOutlinedIcon from "@mui/icons-material/FavoriteOutlined";
+import Link from "next/link";
 
 const CompletedPost = () => {
   const [isLiked, setIsLiked] = useState(false);
@@ -17,9 +18,11 @@ const CompletedPost = () => {
       </div>
       {/* middle */}
       <div className="w-full h-fit min-h-36 p-1 flex flex-row items-center my-2">
-        <div className="w-[33%] min-h-36 bg-white border-2 md:w-32">
-          <span>cover</span>
-        </div>
+        <Link href="/books/123">
+          <div className="w-[33%] min-h-36 bg-white border-2 md:w-32">
+            <span>cover</span>
+          </div>
+        </Link>
         <div className="w-[66%] h-full md:w-64 min-h-36 bg-white flex flex-col items-start justify-around p-2">
           <div className="">
             <div className="text-base text-black">Player Piano</div>
@@ -53,14 +56,14 @@ const CompletedPost = () => {
       <div className="bg-slate-500 w-full h-8 flex flex-row items-center justify-between text-slate-100 text-center text-sm">
         {/* like button */}
         <div
-          className=" h-full w-1/2 border-r-2 border-slate-100 flex items-center justify-center gap-2"
+          className=" h-full w-1/2 border-r-2 border-slate-100 flex items-center justify-center gap-2 hover:text-slate-400"
           onClick={() => setIsLiked(!isLiked)}
         >
           {isLiked ? <FavoriteOutlinedIcon /> : <FavoriteBorderOutlinedIcon />}
           <span>{isLiked ? "Liked" : "Like"}</span>
         </div>
         {/* comment button */}
-        <div className="h-full w-1/2 flex items-center justify-center gap-2">
+        <div className="h-full w-1/2 flex items-center justify-center gap-2 hover:text-slate-400">
           <ChatBubbleOutlineOutlinedIcon />
           <span>Comment</span>
         </div>

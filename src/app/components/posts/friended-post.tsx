@@ -17,14 +17,14 @@ const FriendedPost = () => {
       <div className="bg-slate-500 w-full h-8 flex flex-row items-center justify-between text-slate-100 text-center text-sm">
         {/* like button */}
         <div
-          className=" h-full w-1/2 border-r-2 border-slate-100 flex items-center justify-center gap-2"
+          className=" h-full w-1/2 border-r-2 border-slate-100 flex items-center justify-center gap-2 hover:text-slate-400"
           onClick={() => setIsLiked(!isLiked)}
         >
           {isLiked ? <FavoriteOutlinedIcon /> : <FavoriteBorderOutlinedIcon />}
           <span>{isLiked ? "Liked" : "Like"}</span>
         </div>
         {/* comment button */}
-        <div className="h-full w-1/2 flex items-center justify-center gap-2">
+        <div className="h-full w-1/2 flex items-center justify-center gap-2 hover:text-slate-400">
           <ChatBubbleOutlineOutlinedIcon />
           <span>Comment</span>
         </div>

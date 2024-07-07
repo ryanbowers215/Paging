@@ -12,20 +12,32 @@ const Leftbar = () => {
     <div className="w-48 h-[calc(100vh-96px)] pt-10">
       {/* links */}
       <div className="flex flex-col gap-20 items-center justify-center font-mono">
-        <Link href="/profile/username" className="flex gap-2 items-center">
+        <Link
+          href="/profile/username"
+          className="flex gap-2 items-center hover:text-slate-400"
+        >
           {" "}
           <Person2OutlinedIcon />
           Profile
         </Link>
-        <Link href="/" className="flex gap-2 items-center">
+        <Link
+          href="/books/123"
+          className="flex gap-2 items-center hover:text-slate-400"
+        >
           <LibraryBooksOutlinedIcon />
           Books
         </Link>
-        <Link href="/shelves" className="flex gap-2 items-center">
+        <Link
+          href="/shelves"
+          className="flex gap-2 items-center hover:text-slate-400"
+        >
           <AutoAwesomeMotionOutlinedIcon />
           Shelves
         </Link>
-        <Link href="/friends" className="flex gap-2 items-center">
+        <Link
+          href="/friends"
+          className="flex gap-2 items-center hover:text-slate-400"
+        >
           <PeopleAltOutlinedIcon />
           Friends
         </Link>
