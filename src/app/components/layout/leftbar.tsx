@@ -9,12 +9,12 @@ import LibraryBooksOutlinedIcon from "@mui/icons-material/LibraryBooksOutlined";
 
 const Leftbar = () => {
   return (
-    <div className="w-48 h-[calc(100vh-96px)] pt-10">
+    <div className="w-48 h-[calc(100vh-96px)] pt-10 text-red-950 ">
       {/* links */}
       <div className="flex flex-col gap-20 items-center justify-center font-mono">
         <Link
           href="/profile/username"
-          className="flex gap-2 items-center hover:text-slate-400"
+          className="flex gap-2 items-center hover:text-red-500"
         >
           {" "}
           <Person2OutlinedIcon />
@@ -22,21 +22,21 @@ const Leftbar = () => {
         </Link>
         <Link
           href="/books/123"
-          className="flex gap-2 items-center hover:text-slate-400"
+          className="flex gap-2 items-center hover:text-red-500 "
         >
           <LibraryBooksOutlinedIcon />
           Books
         </Link>
         <Link
           href="/shelves"
-          className="flex gap-2 items-center hover:text-slate-400"
+          className="flex gap-2 items-center hover:text-red-500"
         >
           <AutoAwesomeMotionOutlinedIcon />
           Shelves
         </Link>
         <Link
           href="/friends"
-          className="flex gap-2 items-center hover:text-slate-400"
+          className="flex gap-2 items-center hover:text-red-500"
         >
           <PeopleAltOutlinedIcon />
           Friends

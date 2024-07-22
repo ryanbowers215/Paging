@@ -1,5 +1,9 @@
+"use client";
+import { useParams } from "next/navigation";
+
 const ProfilePage = () => {
-  return <div className="">ProfilePage</div>;
+  const { username } = useParams();
+  return <div>{username}</div>;
 };
 
 export default ProfilePage;

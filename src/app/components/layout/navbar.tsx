@@ -2,6 +2,7 @@
 import Link from "next/link";
 import MobileMenu from "../mobile-menu";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
+import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 
 const Navbar = () => {
   return (
@@ -10,18 +11,28 @@ const Navbar = () => {
       <div className="hidden md:block w-[20%]">
         <Link
           href="/"
-          className="text-xl text-slate-600 font-mono hover:text-slate-400"
+          className="text-xl text-red-950 font-mono hover:text-red-500"
         >
           paging
         </Link>
       </div>
 
       {/* middle */}
-      <div className="flex w-[50%] text-sm">
+      <div className="flex w-[50%] text-sm flex gap-3 bg-red-50 items-center text-gray-500 border-2 border-red-50 rounded-md px-2">
+        <SearchRoundedIcon />
         <input
-          className="h-10 w-full border-2 border-slate-600 bg-slate-100 rounded-md"
+          id="searchbar"
+          className="h-10 w-full p-2 bg-red-50 border-none text-gray-500"
           placeholder="Search!"
-        ></input>
+        />
+        <select
+          id="searchtype"
+          name="searchtype"
+          className="h-full rounded-md border-0 bg-transparent text-gray-500 sm:text-sm"
+        >
+          <option>Books</option>
+          <option>Users</option>
+        </select>
       </div>
 
       {/* right */}
@@ -29,7 +40,7 @@ const Navbar = () => {
         <div className="block md:hidden">
           <MobileMenu />
         </div>
-        <div className="hidden md:block text-slate-600 hover:text-slate-400">
+        <div className="hidden md:block text-red-950 hover:text-red-500">
           <Link href="/settings ">
             <SettingsOutlinedIcon />
           </Link>

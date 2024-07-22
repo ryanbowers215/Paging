@@ -20,13 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="fixed top-0 w-screen bg-slate-200 px-5 border-b-2 border-black z-10">
+        <div className="fixed top-0 w-screen bg-white px-5 border-b-2 border-red-50 z-10">
           <Navbar />
         </div>
-        <div className="hidden md:block fixed left-0 h-full bg-slate-200 w-48 border-r-2 border-black z-9">
+        <div className="hidden md:block fixed left-0 h-full bg-white w-48 border-r-2 border-red-50 z-9">
           <Leftbar />
         </div>
-        <div className="hidden md:block fixed right-0 h-full bg-slate-200  w-12 border-l-2 border-black z-9">
+        <div className="hidden md:block fixed right-0 h-full bg-white  w-12 border-l-2 border-red-50 z-9">
           <Rightbar />
         </div>
         <div className="bg-white md:ml-48 md:mr-12 px-4 mt-24">{children}</div>
