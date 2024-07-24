@@ -8,6 +8,8 @@ const ShelvesPage = () => {
       <Shelf />
       <Shelf />
       <Shelf />
+      <Shelf />
+      <Shelf />
     </div>
   );
 };

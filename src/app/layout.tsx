@@ -29,7 +29,7 @@ export default function RootLayout({
         <div className="hidden md:block fixed right-0 h-full bg-white  w-12 border-l-2 border-red-50 z-9">
           <Rightbar />
         </div>
-        <div className="bg-white md:ml-48 md:mr-12 px-4 mt-24">{children}</div>
+        <div className="bg-white md:ml-48 md:mr-12 px-4 mt-32">{children}</div>
       </body>
     </html>
   );

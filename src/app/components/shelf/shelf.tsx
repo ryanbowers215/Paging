@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Shelf = () => {
   return (
-    <div className="min-w-[31%] h-60 bg-slate-50 flex text-white flex-col">
+    <div className="w-[30%] h-fit bg-slate-50 flex text-white flex-col">
       <div className="flex flex-col bg-red-500 cursor-pointer">
         <Link href="/shelves/123">
           <div className="w-full h-10 flex items-center px-3 text-md text-white text-lg flex justify-between items-center">

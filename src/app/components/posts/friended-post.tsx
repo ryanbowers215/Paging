@@ -20,7 +20,18 @@ const FriendedPost = () => {
           className=" h-full w-1/2 border-r-2 border-white flex items-center justify-center gap-2 hover:text-red-800"
           onClick={() => setIsLiked(!isLiked)}
         >
-          {isLiked ? <FavoriteOutlinedIcon /> : <FavoriteBorderOutlinedIcon />}
+          <div
+            className={`${
+              isLiked ? "rotate-[360deg]" : ""
+            } ease-in-out duration-200`}
+          >
+            {" "}
+            {isLiked ? (
+              <FavoriteOutlinedIcon />
+            ) : (
+              <FavoriteBorderOutlinedIcon />
+            )}
+          </div>
           <span>{isLiked ? "Liked" : "Like"}</span>
         </div>
         {/* comment button */}

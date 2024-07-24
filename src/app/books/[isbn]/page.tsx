@@ -1,5 +1,5 @@
-const BooksPage = () => {
-  return <div className="">BooksPage</div>;
+const IndBookPage = () => {
+  return <div className="">IndBookPage</div>;
 };
 
-export default BooksPage;
+export default IndBookPage;

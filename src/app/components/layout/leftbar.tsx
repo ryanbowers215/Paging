@@ -21,7 +21,7 @@ const Leftbar = () => {
           Profile
         </Link>
         <Link
-          href="/books/123"
+          href="/books"
           className="flex gap-2 items-center hover:text-red-500 "
         >
           <LibraryBooksOutlinedIcon />
